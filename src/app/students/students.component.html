@@ -1,0 +1,9 @@
+<h2>Liste des élèves</h2>
+
+
+<ul>
+    <li *ngFor="let student of ( students | sortByName )">
+        {{student.name}}
+
+    </li>
+</ul>
