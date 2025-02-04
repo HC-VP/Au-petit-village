@@ -1,5 +1,7 @@
 import { Component } from '@angular/core';
 
+
+
 @Component({
   selector: 'app-home',
   standalone: false,
@@ -9,5 +11,8 @@ import { Component } from '@angular/core';
 })
 export class HomeComponent {
   title = "Au petit village"
+
+
+  
 
 }
