@@ -1,0 +1,31 @@
+[
+    {
+      "id": 1,
+      "name": "Figurine Astérix",
+      "price": 29.99,
+      "image": "assets/asterix.jpg",
+      "description": "Figurine artisanale d'Astérix."
+    },
+    {
+      "id": 2,
+      "name": "Figurine Obélix",
+      "price": 29.99,
+      "image": "assets/obelix.jpg",
+      "description": "Figurine artisanale d'Obélix."
+    },
+    {
+        "id": 3,
+        "name": "Figurine Panoramix",
+        "price": 29.99,
+        "image": "assets/panoramix.jpg",
+        "description": "Figurine artisanale de Panoramix."
+    },
+    {
+        "id": 4,
+        "name": "Figurine Idéfix",
+        "price": 19.99,
+        "image": "assets/idéfix.jpg",
+        "description": "Figurine artisanale de Idéfix."
+    }
+  ]
+  

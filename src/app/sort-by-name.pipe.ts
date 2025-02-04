@@ -6,9 +6,9 @@ import { Pipe, PipeTransform } from '@angular/core';
 })
 export class SortByNamePipe implements PipeTransform {
 
-  transform(students: any[]): any[] {
+  transform(products: any[]): any[] {
 
-    return students.sort((a:any,b:any) => {
+    return products.sort((a:any,b:any) => {
       if(a.name < b.name) {return -1;}
       else if(a.name > b.name) {return 1;}
       else return 0;

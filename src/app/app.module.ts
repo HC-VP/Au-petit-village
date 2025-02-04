@@ -3,21 +3,27 @@ import { BrowserModule, provideClientHydration, withEventReplay } from '@angular
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
-import { CardComponent } from './card/card.component';
+
 
 import { LOCALE_ID } from '@angular/core';
 import { registerLocaleData } from '@angular/common';
 import localeFr from '@angular/common/locales/fr';
 import { SortByNamePipe } from './sort-by-name.pipe';
-import { StudentsComponent } from './students/students.component';
-import { HomeComponent } from './home/home.component';
+
+import { HeaderComponent } from './components/header/header.component';
+import { FooterComponent } from './components/footer/footer.component';
+import { AboutComponent } from './pages/about/about.component';
+import { ProductComponent } from './pages/product/product.component';
+import { HomeComponent } from './pages/home/home.component';
 
 @NgModule({
   declarations: [
-    AppComponent,
-    CardComponent,
+    AppComponent,    
     SortByNamePipe,
-    StudentsComponent,
+    HeaderComponent,
+    FooterComponent,
+    AboutComponent,
+    ProductComponent,
     HomeComponent
   ],
   imports: [

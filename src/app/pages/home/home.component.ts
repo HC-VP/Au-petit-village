@@ -8,6 +8,6 @@ import { Component } from '@angular/core';
   styleUrl: './home.component.css'
 })
 export class HomeComponent {
-  title = "Découvrir le CEF"
+  title = "Au petit village"
 
 }

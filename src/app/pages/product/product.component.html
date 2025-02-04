@@ -1,0 +1,7 @@
+<h1>Nos produits</h1>
+
+<ul>
+    <li *ngFor="let product of ( products | sortByName )">
+        {{product.name}}
+    </li>
+</ul>
