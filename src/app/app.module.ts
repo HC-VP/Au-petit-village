@@ -1,6 +1,9 @@
 import { NgModule } from '@angular/core';
 import { BrowserModule, provideClientHydration, withEventReplay } from '@angular/platform-browser';
 
+import { FormsModule } from '@angular/forms';
+
+
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 
@@ -16,6 +19,10 @@ import { AboutComponent } from './pages/about/about.component';
 import { ProductComponent } from './pages/product/product.component';
 import { HomeComponent } from './pages/home/home.component';
 
+import { SortByPricePipe } from './sort-by-price.pipe';
+import { SortByNamePipe } from './sort-by-name.pipe';
+import { FilterByNamePipe } from './filter-by-name.pipe';
+
 @NgModule({
   declarations: [
     AppComponent,        
@@ -23,11 +30,16 @@ import { HomeComponent } from './pages/home/home.component';
     FooterComponent,
     AboutComponent,
     ProductComponent,
-    HomeComponent
+    HomeComponent,
+
+    SortByPricePipe,
+    SortByNamePipe,
+    FilterByNamePipe
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    FormsModule
   ],
   providers: [{
     provide: LOCALE_ID,

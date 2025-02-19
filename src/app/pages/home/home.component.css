@@ -1,0 +1,7 @@
+.thumbnail {
+  width: 150px; /* Ajuste la taille */
+  height: auto;
+  margin-right: 10px;
+  border-radius: 5px;
+  display: block; /* Assure que l'image s'affiche correctement */
+}

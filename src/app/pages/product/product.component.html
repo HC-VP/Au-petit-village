@@ -1,7 +1,11 @@
 <h1>Nos produits</h1>
 
-<ul>
-    <li *ngFor="let product of ( products | sortByName )">
-        {{product.name}}
-    </li>
-</ul>
+
+
+<div *ngIf="product">
+    <h2>{{ product.name }}</h2>
+    <img [src]="product.picture" alt="{{ product.name }}">
+    <p>Prix : {{ product.price }}€</p>
+</div>
+  
+  <a routerLink="/">Retour à l'accueil</a>

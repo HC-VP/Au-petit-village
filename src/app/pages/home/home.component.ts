@@ -12,11 +12,18 @@ import { Product, ProductsService } from '../../services/products.service';
 export class HomeComponent implements OnInit {
   title = "Au petit village"
   products: Product[] = [];
+  sortOrder: 'asc' | 'desc' = 'asc';
+
+
+  searchTerm: string = '';
 
   constructor(private productsService: ProductsService) {}
 
   ngOnInit(): void {
-    this.products = this.productsService.getProducts();
-      
+    this.products = this.productsService.getProducts();      
+  }
+
+  toggleSortOrder() {
+    this.sortOrder = this.sortOrder === 'asc' ? 'desc' : 'asc';
   }
 }

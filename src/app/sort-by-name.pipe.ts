@@ -3,7 +3,7 @@ import { Product } from './services/products.service';
 
 @Pipe({
   name: 'sortByName',
-  standalone: true
+  standalone: false
 })
 export class SortByNamePipe implements PipeTransform {
 

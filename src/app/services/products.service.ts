@@ -18,7 +18,7 @@ export class ProductsService {
       id: 1,
       name: "Figurine Astérix",
       price: 29.99,
-      picture: "./assets/img/asterix.jpg",
+      picture: "assets/img/asterix.jpg",
       description: "Figurine du célèbre personnage éponyme de la BD Astérix"      
     },
     {
@@ -53,5 +53,8 @@ export class ProductsService {
     return this.products;
   }
 
+  getProductById(id: number): Product | undefined {
+    return this.products.find(product => product.id === id);
+  }
   
 }

@@ -7,5 +7,21 @@
       
       
     
+<div *ngFor="let product of products | sortByPrice">
+  {{ product.name }} - {{ product.price }}€
+</div>
   
-  
+<input type="text" [(ngModel)]="searchTerm" placeholder="Rechercher une figurine...">
+<div *ngFor="let product of products | filterByName:searchTerm">
+  {{ product.name }}
+</div>
+
+
+<button (click)="toggleSortOrder()">Trier par prix ({{ sortOrder }})</button>
+
+<div *ngFor="let product of products | sortByPrice">
+  <a [routerLink]="['/product', product.id]">
+    <img [src]="product.picture" alt="{{ product.name }}" class="thumbnail">
+    <p>{{ product.name }} - {{ product.price }}€</p>
+  </a>
+</div>
