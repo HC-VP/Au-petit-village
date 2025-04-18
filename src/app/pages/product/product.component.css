@@ -1,0 +1,42 @@
+.content {
+    padding: 2rem;
+    font-family: 'Comfortaa', sans-serif;
+    text-align: center;
+  }
+  
+  .products {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+    margin-top: 2rem;
+  }
+  
+  .product-card {
+    text-align: center;
+    max-width: 200px;
+  }
+  
+  .thumbnail {
+    width: 150px;
+    height: auto;
+    border-radius: 5px;
+    margin-bottom: 5px;
+  }
+  
+  a {
+    text-decoration: none;
+    color: #151217;
+    display: inline-block;
+    margin-top: 2rem;
+  }
+  
+  a:hover {
+    color: #DA001E;
+  }
+  
+  p {
+    margin: 0;
+    font-weight: bold;
+  }
+  

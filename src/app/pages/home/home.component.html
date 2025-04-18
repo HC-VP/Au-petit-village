@@ -1,27 +1,20 @@
-
 <div class="content" role="main">
+  <h1>Nos Figurines</h1>
 
-  <h1>{{title}}</h1>
-  
-</div>
-      
-      
-    
-<div *ngFor="let product of products | sortByPrice">
-  {{ product.name }} - {{ product.price }}€
-</div>
-  
-<input type="text" [(ngModel)]="searchTerm" placeholder="Rechercher une figurine...">
-<div *ngFor="let product of products | filterByName:searchTerm">
-  {{ product.name }}
-</div>
+  <p>Chaque figurine est imaginée, sculptée et peinte à la main par nos artistes, dans le respect des personnages originaux, tout en y apportant une touche artisanale unique.</p>
 
+  <input type="text" [(ngModel)]="searchTerm" placeholder="Rechercher une figurine...">
 
-<button (click)="toggleSortOrder()">Trier par prix ({{ sortOrder }})</button>
+  <button (click)="toggleSortOrder()">
+    Trier par prix ({{ sortOrder === 'asc' ? 'croissant' : 'décroissant' }})
+  </button>
 
-<div *ngFor="let product of products | sortByPrice">
-  <a [routerLink]="['/product', product.id]">
-    <img [src]="product.picture" alt="{{ product.name }}" class="thumbnail">
-    <p>{{ product.name }} - {{ product.price }}€</p>
-  </a>
+  <div class="products">
+    <div class="product-card" *ngFor="let product of products | filterByName:searchTerm | sortByPrice:sortOrder">
+      <a [routerLink]="['/product', product.id]">
+        <img [src]="product.picture" alt="{{ product.name }}" class="thumbnail">
+        <p>{{ product.name }} - {{ product.price }}€</p>
+      </a>
+    </div>
+  </div>
 </div>

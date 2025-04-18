@@ -1,0 +1,12 @@
+<div class="content" *ngIf="product">
+    <h1>{{ product.name }}</h1>
+  
+    <img [src]="'/' + product.picture" alt="{{ product.name }}" class="product-image">
+  
+    <p class="price">{{ product.price }} €</p>
+  
+    <p class="description">{{ product.description }}</p>
+  
+    <a routerLink="/">← Retour à l'accueil</a>
+  </div>
+  

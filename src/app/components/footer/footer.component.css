@@ -1,34 +1,47 @@
+footer {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  background-color: #151217;
+  color: white;
+  padding: 1rem 2rem;
+  font-family: 'Comfortaa', sans-serif;
+  flex-wrap: wrap;
+}
+
+.foot-about {
+  flex: 1 1 300px;
+  padding-right: 1rem;
+}
+
+.foot-about h3 {
+  font-family: 'Bubbleboddy', sans-serif;
+  font-size: 20px;
+  color: #FDD90B;
+  margin-bottom: 0.5rem;
+}
+
+.foot-about p {
+  font-size: 14px;
+  margin: 0;
+}
+
 .social {
-    display: flex;
-    margin-top: 30px;
-    margin-bottom: 5px;
-    justify-content: flex-end;
-    align-items: flex-end;
-    padding-right: 10px;
-    width: 50%;
-  }
-  
-  .foot-about {
-    display: flex;
-    flex-direction: column;
-    padding-top: 10px;
-    color: var(--secondary-color);
-    width: 40%;
-    padding-left: 10px;
-  }
-  
-  h3 {
-    font-family: "Bubbleboddy";
-    font-size: 18px;
-  }
-  
-  footer {
-    display: flex;
-    justify-content: space-between;
-  }
-  
-  .fa-brands {
-    font-size: 24px;
-    margin: 0 5px;
-  }
-  
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  gap: 15px;
+  flex: 1 1 200px;
+  margin-top: 10px;
+}
+
+.social i {
+  font-size: 24px;
+  color: #FDD90B;
+  transition: transform 0.2s ease;
+}
+
+.social i:hover {
+  transform: scale(1.2);
+  color: #DA001E;
+}

@@ -1,1 +1,58 @@
-/* You can add global styles to this file, and also import other style files */
+/* styles.css */
+
+@import url('https://fonts.googleapis.com/css2?family=Comfortaa&display=swap');
+
+@font-face {
+  font-family: 'Bubbleboddy';
+  src: url('./assets/font/Bubbleboddy.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+
+
+
+
+body {
+  margin: 0;
+  font-family: 'Comfortaa', sans-serif;
+  background-color: #F9D0A3;
+  color: #151217;
+}
+
+h1, h2, h3 {
+  font-family: 'Bubbleboddy', sans-serif;
+  color: #151217;
+}
+
+a {
+  color: #DA001E;
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+button {
+  background-color: #FDD90B;
+  border: none;
+  padding: 10px 20px;
+  font-weight: bold;
+  cursor: pointer;
+  border-radius: 5px;
+}
+
+button:hover {
+  background-color: #DA001E;
+  color: white;
+}
+
+* {
+    box-sizing: border-box;
+  }
+  
+  html, body {
+    height: 100%;
+  }
+  

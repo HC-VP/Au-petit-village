@@ -1,0 +1,26 @@
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #FDD90B;
+    padding: 1rem 2rem;
+    font-family: 'Bubbleboddy', sans-serif;
+  }
+  
+  .logo {
+    height: 60px;
+  }
+  
+  nav a {
+    margin-left: 20px;
+    color: #151217;
+    font-weight: bold;
+    font-size: 18px;
+    text-decoration: none;
+  }
+  
+  nav a:hover,
+  nav a.active {
+    color: #DA001E;
+  }
+  

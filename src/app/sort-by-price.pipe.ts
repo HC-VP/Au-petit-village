@@ -7,15 +7,11 @@ import { Product } from './services/products.service';
 })
 export class SortByPricePipe implements PipeTransform {
 
-  transform(value: Product[], order: "asc" | "desc" = "asc"): Product[] {
-    return value.sort((a, b) => {
-      if (order === "asc") {
-        return a.price - b.price;
-      } else if (order === "desc") {
-        return b.price - a.price;
-      }
-      return 0;
-    });
+  transform(products: any[], order: 'asc' | 'desc' = 'asc'): any[] {
+    return products.sort((a, b) => 
+      order === 'asc' ? a.price - b.price : b.price - a.price
+    );
   }
+  
 }
 

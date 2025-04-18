@@ -18,28 +18,28 @@ export class ProductsService {
       id: 1,
       name: "Figurine Astérix",
       price: 29.99,
-      picture: "assets/img/asterix.jpg",
+      picture: "assets/img/asterix.png",
       description: "Figurine du célèbre personnage éponyme de la BD Astérix"      
     },
     {
       id: 2,
       name: "Figurine Obélix",
       price: 29.99,
-      picture: "./assets/img/obelix.jpg",
+      picture: "./assets/img/obelix.png",
       description: "Figurine d'Obélix, le meilleur ami d'Astérix."      
     },
     {
       id: 3,
       name: "Figurine Panoramix",
       price: 29.99,
-      picture: "./assets/img/panoramix.jpg",
+      picture: "./assets/img/panoramix.png",
       description: "Figurine de Panoramix, druide et ami d'Astérix."      
     },
     {
       id: 4,
       name: "Figurine Idéfix",
       price: 19.99,
-      picture: "./assets/img/idefix.jpg",
+      picture: "./assets/img/idefix.png",
       description: "Figurine artisanale de Idéfix, célèbre chien d'Obélix"
   }
   ];
